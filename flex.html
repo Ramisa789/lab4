@@ -68,17 +68,21 @@ Description : Flex Layouts.
         body { margin: 0; padding: 0; }
         img { max-width: 100%; height: auto; }
         .container { 
-			display:flex; flex-direction:column;
+			display:flex; 
+			flex-direction:column;
 			/*I need some CSS codes.*/
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			/*I need some CSS codes.*/
 		}
         .main { 
 			padding: 15px; 
+			display: flex;
+			flex-direction: column;
+			/*flex:...
 			/*I need some CSS codes.*/
 		}
         
@@ -86,7 +90,7 @@ Description : Flex Layouts.
         .row {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between; 
+			width: 100%;
 			/*I need some CSS codes.*/
 		}
         
@@ -99,14 +103,14 @@ Description : Flex Layouts.
 			}
 			.medium { 
 				width: 70%;
-				margin-top: 10px;
 				/*I need some CSS codes.*/
 			}
 			.small { 
 				width: 30%;
-				margin-top: 10px;
+				
 				/*I need some CSS codes.*/
-			 }       
+			 }     
+			 
         }
 
         @media screen and (max-width: 768px) {
@@ -115,9 +119,24 @@ Description : Flex Layouts.
 				/*I need some CSS codes.*/
 			}
             .menu ul { 
+				flex-direction: row;
+				/*width: 100%;*/
+
+				/*I need some CSS codes.*/
+			 }          
+			 .large { 
 				width: 100%;
 				/*I need some CSS codes.*/
-			 }            
+			}
+			.medium { 
+				width: 60%;
+				/*I need some CSS codes.*/
+			}
+			.small { 
+				width: 40%;
+				
+				/*I need some CSS codes.*/
+			 }   
             /*I need some CSS codes.*/
         }
 
@@ -128,7 +147,22 @@ Description : Flex Layouts.
 
 				/*I need some CSS codes.*/
 			 }
+			 .body{
+				flex-direction: column;
+			 }
+			/*}          
+			 .large { 
+				width: 100%;
+				/*I need some CSS codes.*/
+			/*}
+			.medium { 
+				width: 100%;
+				/*I need some CSS codes.*/
+			/*}
+			.small { 
+				width: 100%;*/
         }
+
     </style>
 </head>
 <body>
