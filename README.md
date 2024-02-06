@@ -1,5 +1,8 @@
 # Project Overview 
 
+- responsive.html: uses css, box sizing and float to make sure the menu/pictures are responsive to different screen sizes.
+- flex.html: uses flex and flex direction to make sure the menu/pictures are responsive to differnt screen sizes
+
 ## Team Members 
 
 |   Name     |
